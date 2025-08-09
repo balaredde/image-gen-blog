@@ -1,6 +1,6 @@
 # AI Blog & Image Generation Platform
 
-![Project Banner](https://via.placeholder.com/1200x600/1e293b/ffffff?text=AI+Blog+%26+Image+Gen)
+![Image Generation App](https://i.ibb.co/p0f27C2/Thumbnail-9.png)
 
 A full-stack web application that combines a feature-rich blogging platform with a powerful AI image generator. Users can create accounts, write blog posts, and generate unique images using the Stability AI API, with all data and images managed seamlessly through MongoDB and Cloudinary.
 
@@ -77,7 +77,7 @@ Make sure you have the following installed on your machine:
     * **In your first terminal (for the backend):**
         ```sh
         cd server
-        npm run dev
+        nodemon index.js
         ```
     * **In your second terminal (for the frontend):**
         ```sh
@@ -119,24 +119,19 @@ STABILITY_API_KEY="your_stability_ai_api_key"
 
 ## 📜 API Endpoints
 
-The backend server exposes the following REST API endpoints:
+The backend server exposes the following REST API endpoints, versioned under `/api/v1/`.
 
-* `POST /api/auth/register` - Register a new user
-* `POST /api/auth/login` - Log in an existing user
-* `GET /api/posts` - Fetch all blog posts
-* `POST /api/posts` - Create a new blog post
-* `POST /api/generate` - Generate an image from a text prompt
+* **`GET /api/v1/post`**: Fetches all posts from the database.
+* **`POST /api/v1/post`**: Creates a new post with data from the request body.
+* **`POST /api/v1/dalle`**: Generates a new image using the DALL-E API based on a provided text prompt.
 
 ---
 
-## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
 
 ## 📬 Contact
 
-Your Name - [@your_twitter_handle](https://twitter.com/your_twitter_handle) - your.email@example.com
+bala rajendra reddy mittani- balarajendra11@gmail.comn
+
 
 Project Link: [https://github.com/your-username/AI-IMAGE-GEN](https://github.com/your-username/AI-IMAGE-GEN)
